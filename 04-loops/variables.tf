@@ -27,7 +27,7 @@ variable "instance_type" {
 }
 
 variable "instances" {
-  type    = list(any)
+  type    = map
   default = ["mongodb", "redis", "mysql", "rabbitmq", "catalogue", "user", "cart", "shipping", "payment", "frontend"]
 }
 
